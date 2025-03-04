@@ -22,6 +22,7 @@ export const POST = async (req) => {
       .limit(limit);
 
     const totalUsers = await User.countDocuments();
+    console.log("Total USers")
     const now = new Date();
     const oneMonthAgo = new Date(
       now.getFullYear(),
